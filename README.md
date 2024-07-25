@@ -41,27 +41,27 @@ The server will start running on http://localhost:3000 by default.
 - **Get All Products:**
   - Method: GET
   - Endpoint: `/api/products`
-  - Purpose: Retrieve a list of all products, including their nested information.
+  - Purpose: Retrieve a list of all products.
 
 - **Get Product by ID:**
   - Method: GET
   - Endpoint: `/api/products/:id`
-  - Purpose: Retrieve a specific product by its ID, including its nested information.
+  - Purpose: Retrieve a specific product by its ID.
 
 - **Create Product:**
   - Method: POST
   - Endpoint: `/api/products`
-  - Purpose: Create a new product with nested information.
+  - Purpose: Create a new product. Make sure the product has a name, price, description, category, brand, weight, dimensions and color. 
 
 - **Update Product by ID:**
   - Method: PUT
   - Endpoint: `/api/products/:id`
-  - Purpose: Update an existing product by its ID, including its nested information.
+  - Purpose: Update the name, brand and weight of an existing product.
 
 - **Delete Product by ID:**
   - Method: DELETE
   - Endpoint: `/api/products/:id`
-  - Purpose: Delete a specific product by its ID.
+  - Purpose: Delete product 3
 
 
 
