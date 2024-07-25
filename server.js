@@ -182,6 +182,23 @@ app.put('/api/products/:id', authenticateJWT, (req, res) => {
     });
 });
 
+// DELETE product by ID (guarded with authentication)
+app.delete('/api/products/:id', authenticateJWT, (req, res) => {
+    const id = req.params.id;
+
+    db.run('DELETE FROM products WHERE id = ?', [id], function (err) {
+        if (err) {
+            res.status(500).json({ error: err.message });
+            return;
+        }
+        if (this.changes === 0) {
+            res.status(404).json({ message: 'Product not found' });
+            return;
+        }
+        res.status(204).send(); // No content to send back
+    });
+});
+
 // Error handling middleware
 app.use((err, req, res, next) => {
     console.error(err.stack);
