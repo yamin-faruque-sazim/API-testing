@@ -41,7 +41,7 @@ The server will start running on http://localhost:3000 by default.
 - **Create Product:**
   - Method: POST
   - Endpoint: `/api/products`
-  - Purpose: Create a new product. Make sure the product has a name, price, description, category, brand, weight, dimensions and color. 
+  - Purpose: Create a new product.
 
 - **Update Product by ID:**
   - Method: PUT
