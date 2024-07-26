@@ -61,7 +61,7 @@ The server will start running on http://localhost:3000 by default.
 - **Delete Product by ID:**
   - Method: DELETE
   - Endpoint: `/api/products/:id`
-  - Purpose: Delete product 3
+  - Purpose: Delete product 
 
 
 
