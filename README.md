@@ -1,6 +1,6 @@
 # API Testing Assessment
 
-This repository contains a simple Express.js application for an API testing assessment. The application provides endpoints to perform CRUD operations on products, including support for nested information such as categories and details.
+This repository contains a simple Express.js application for Section 2 Part B of the assessment.
 
 ## Getting Started
 
@@ -18,17 +18,8 @@ To get started with this project, follow the instructions below.
  
 The server will start running on http://localhost:3000 by default.
 
-### Testing the APIs
 
-1. Use Postman or any other API testing tool to interact with the provided endpoints.
-
-2. Manually create requests to the APIs.
-   - HTTP method (GET, POST, PUT, DELETE)
-   - Request URL (e.g., http://localhost:3000/api/products)
-
-4. Send requests to test the functionality of the APIs as instructed.
-
-## Available Endpoints
+## Endpoints
 
 - **Generate Temporary Token:**
   - Method: POST
@@ -36,32 +27,33 @@ The server will start running on http://localhost:3000 by default.
   - Purpose: Generate a temporary JWT token for authentication.
  
     **Note: This token is necessary for guarded endpoints only.
-    To use this token, add a new header with the key "Authorization" and the value "{JWT token here}"
 
 - **Get All Products:**
   - Method: GET
   - Endpoint: `/api/products`
-  - Purpose: Retrieve a list of all products, including their nested information.
+  - Purpose: Retrieve a list of all products.
 
 - **Get Product by ID:**
   - Method: GET
   - Endpoint: `/api/products/:id`
-  - Purpose: Retrieve a specific product by its ID, including its nested information.
+  - Purpose: Retrieve a specific product by its ID.
 
 - **Create Product:**
   - Method: POST
   - Endpoint: `/api/products`
-  - Purpose: Create a new product with nested information.
+  - Purpose: Create a new product.
 
 - **Update Product by ID:**
   - Method: PUT
   - Endpoint: `/api/products/:id`
-  - Purpose: Update an existing product by its ID, including its nested information.
+  - Purpose: Update an existing product.
 
 - **Delete Product by ID:**
   - Method: DELETE
   - Endpoint: `/api/products/:id`
-  - Purpose: Delete a specific product by its ID.
+  - Purpose: Delete product.
+
+
 
 
 
